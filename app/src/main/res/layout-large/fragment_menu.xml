@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imglogo"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:src="@drawable/csilogo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imglogo"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/imglogo"
+                android:text="C.S.I. GROUP"
+                android:textSize="15dp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello, Visitor! Welcome to C.S.I Group!"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="#2cd7c8c8"
+            android:textColor="#30007c"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+        <ImageView
+            android:id="@+id/imgwelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/android"
+            android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="150dp">-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_alignParentBottom="true">
+
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" -->
+                <!--/>-->
+                <Button
+                    android:id="@+id/btn_visitor_check-in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visitor Check-in"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:background="@drawable/style_button"
+                    android:drawableLeft="@drawable/ic_qrcodee"
+                    android:drawablePadding="25dp"
+                    android:textColor="#ffffff"
+                    android:layout_above="@+id/btn_department_list"/>
+                <!--android:textAlignment="textStart"-->
+                <!--android:drawableLeft="@drawable/icon_qrcode"/>-->
+                <!--android:layout_below="@+id/img"/>-->
+
+                <Button
+                    android:id="@+id/btn_department_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Department List"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="8dp"
+                    android:drawablePadding="25dp"
+                    android:background="@drawable/style_button"
+                    android:textColor="#ffffff"
+                    android:drawableLeft="@drawable/ic_flowchart1"
+                    android:textAlignment="textStart"
+                    android:layout_above="@+id/btn_employee_Search"/>
+                    <!--android:layout_below="@+id/btn_visitor_check-in"/>-->
+                <Button
+                    android:id="@+id/btn_employee_Search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Search"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_button"
+                    android:textColor="#ffffff"
+                    android:textAlignment="textStart"
+                    android:drawablePadding="25dp"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:layout_above="@+id/btn_company_info"/>
+                <Button
+                    android:id="@+id/btn_company_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Company Info"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_button"
+                    android:textColor="#ffffff"
+                    android:drawablePadding="25dp"
+                    android:textAlignment="textStart"
+                    android:drawableLeft="@drawable/ic_questionmark"
+                    android:layout_alignParentBottom="true" />
+                    <!--&lt;!&ndash;android:layout_below="@+id/btn_employee_Search"/>&ndash;&gt;-->
+
+            </RelativeLayout>
+        <!--</LinearLayout>-->
+        </LinearLayout>
+
+</FrameLayout>
